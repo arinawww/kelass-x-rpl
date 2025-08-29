@@ -1,0 +1,28 @@
+.border {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.wadah {
+    width: 1000px;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+}
+
+.card {
+    width: 30%;
+}
+
+.horizontal {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rata {
+    text-align: center;
+}
