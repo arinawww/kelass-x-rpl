@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .btn-blue:hover {
+    background-color: #2f6cae;
+  }
+}
