@@ -1,0 +1,39 @@
+body {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: 2px solid red;
+    margin: 100px 0px 0px 50px;/*
+    margin-left: 200px; */
+    padding-top: 30px
+}
+
+/*
+nav {
+  border: 3px solid black;
+}*/
+
+img {
+    width: 200px;
+}
+
+.batas {
+    margin-left: 200px;
+}
+
+.warna {
+    background-color: yellow;
+}
+
+#background {
+    background-color: red;
+    position: sticky;
+    top: 200px;
+}
+
+#kiri {
+    margin-left: 200px;
+}

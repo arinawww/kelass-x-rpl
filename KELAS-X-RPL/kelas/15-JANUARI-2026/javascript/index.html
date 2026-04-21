@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar javascript</title>
+</head>
+<body>
+    <h1 id="judul"></h1>
+    <p id="isi"></p>
+    <input type="number" id="bil1" value="">
+    <input type="number" id="bil2" value="">
+    <button onclick="hitung()">hitung</button>
+
+    <h1 id="zodiakanda">zodiak anda</h1>
+    <input type="number" id="bulan" placeholder="bulan">
+    <input type="number" id="tanggal" placeholder="tanggal">
+    <button onclick="zodiak()">zodiak</button>
+
+    <h1 id="nilaianda">nilai anda</h1>
+    <input type="number" id="nilai" placeholder="nilai">
+    <button onclick="nilai()">nilai</button>
+
+    <script>
+        function hitung () {
+        let hasil = document.getElementById("judul");
+        let bil1 = document.getElementById("bil1").value;
+        let bil2 = document.getElementById("bil2").value;
+
+        hasil.innerHTML = parseInt(bil1) + parseInt(bil2);
+        document.getElementById("judul").innerHTML = hasil;
+        }
+
+        function zodiak () {
+            let bulan = parseInt(document.getElementById("bulan").value);
+            let tanggal = parseInt(document.getElementById("tanggal").value);
+            let zodiakanda = document.getElementById("zodiakanda");
+
+            if (bulan < 1 || bulan > 12) {
+                alert("bulan salah !");
+            } else {
+                if (tanggal < 1 || tanggal > 31) {
+                alert("tanggal salah");
+                } else{
+                    if (bulan == 1) {
+                        if (tanggal > 1 && tanggal < 20) {
+                            zodiakanda.innerHTML = "aquarius"
+                        } else{
+                            zodiakanda.innerHTML = "pisces"
+                        }
+                    }
+                    if (bulan == 2) {
+                        if (tanggal > 1 && tanggal < 20) {
+                            zodiakanda.innerHTML = "pisces"
+                        } else {
+                            zodiakanda.innerHTML = "aries"
+                        }
+                    }
+                    if (bulan == 3) {
+                        if (tanggal > 1 && tanggal < 20) {
+                            zodiakanda.innerHTML = "aries"
+                        } else {
+                            zodiakanda.innerHTML = "scorpio"
+                        }
+                    }
+                    if (bulan == 4) {
+                        if (tanggal > 1 && tanggal < 20) {
+                            zodiakanda.innerHTML = "scorpio"
+                        }else {
+                            zodiakanda.innerHTML = "capcicorn"
+                        }
+                    }
+                    if (bulan == 5) {
+                        if (tanggal > 1 && tanggal < 20) {
+                            zodiakanda.innerHTML = "capcicorn"
+                        }else {
+                            zodiakanda.innerHTML = "taurus"
+                        }
+                    }
+                }
+            }
+        }
+
+        function nilai () {
+            let nilai = parseInt(document.getElementById("nilai").value);
+            let nilaianda = document.getElementById("nilaianda");
+
+            if(nilai >=90 && nilai <=100) {
+                nilaianda.innerHTML = "nilai anda A";
+            }else if (nilai >=70 && nilai <=89) {
+                nilaianda.innerHTML = "nila anda B";
+            }else if (nilai >=60 && nilai <= 69) {
+                nilaianda.innerHTML = "nilai anda C";
+            }else if (nilai >=50 && nilai <=59) {
+                nilaianda.innerHTML = "nilai anda E";
+            } else {
+                alert("nilai tidak valid");
+            }
+        }
+
+        // tugas : buatlah konvers nilai. jika 90 - 100, nilainya adalah A
+        // 70 - 89, nilainya b
+        // 60 - 69, nilainya c
+        // 50 - 59, nilainya d
+        // <50 adalah E 
+
+    </script>
+</body>
+</html>

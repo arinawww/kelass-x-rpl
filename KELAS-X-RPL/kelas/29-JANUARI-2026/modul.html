@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- function declaration -->
+        function sapa(){ console.log('Halo'); }
+        function tambah(a,b){ return a+b; } 
+        function kurang(a,b){ return a-b; }
+        function kali(a,){ return a*b; }
+        function bagi(a,b){ return a/b; }
+
+    <!-- Function Expression  -->
+        const sapa = function(){ console.log('Halo'); };
+        const tambah = function(a,b){ return a+b; };
+        const cekGenap = function(n){ return n%2===0; };
+        const luasPersegi = function(s){ return s*s; };
+        const pajak = function(h){ return h*0.1; };
+
+    <!-- Arrow Function -->
+        const sapa = () => console.log('halo');
+        const tambah = (a,b) => a+b;
+        const kuadrat = x => x*x;
+        const diskon = h => h*0.1;
+        const cekUmur = u => u>=17
+
+    <!-- Anonymous Function -->
+        setTimeout(function{} {console.log('Selesai') ; });
+        btn.onclick = function{} {alert('Klik') ; };
+        [1,2,3].forEach(function(n){console.log(n)});
+        document.addEventListener('click'. function(){console.log('klik') ; });
+        (function(){ console.log('Anonim') ; }) ();
+
+    <!-- Callback Function -->
+        function proses(a,cb) { cb(a); }
+        proses(5,function(x) {console.log(x) ; });
+        [1,2].map(function(x) { return n*2; });
+        setTimeout.(() =>console.log('OK')..500);
+        function htung(a,b,op) {return op(a,b) ; }
+
+    <!-- IIFE -->
+        (function() {console.log('mulai') ; }) ();
+        (()=>console.log('Start'))();
+        (function(n){ console.log(n); })(5);
+        (()=>{ let x=10; console.log(x); })();
+        (function(){ alert('IIFE'); })();
+
+    <!-- Function Constructor -->
+        function User(n){ this.nama=n; }
+        const u1 = new User('A');
+        function Mobil(m){ this.merk=m; }
+        const m1 = new Mobil('Honda');
+        function Produk(n,h){ this.nama=n; this.harga=h; }
+
+    <!-- Async Function -->
+        async function getData{} { return 'OK' ; }
+        const cek = async()=> 'Siap';
+        async function delay() { await new Promise(r=>SetTimeout(r.1000)); }
+        async function hitung(a){return a*2; }
+        async function tampil(){ console.log(await getData()); }
+</body>
+</html>

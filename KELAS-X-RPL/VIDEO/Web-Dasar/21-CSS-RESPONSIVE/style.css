@@ -1,0 +1,69 @@
+.border {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.wadah {
+  width: 1000px;
+  margin: auto;
+}
+
+p::first-letter {
+  font-size: 200%;
+  color: red;
+}
+
+h2:hover {
+  background-color: red;
+}
+
+.card:target {
+  background-color: yellow;
+}
+
+.display {
+  display: inline-block;
+  padding: 3%;
+}
+
+img {
+  width: 200px;
+}
+
+.card {
+  width: 30%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.horizontal {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rata {
+  text-align: center;
+}
+
+.warna {
+  background: linear-gradient(to right, red, yellow);
+  color: white;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .tempat {
+    width: 80%;
+  }
+
+  .lebar {
+    width: 100%;
+  }
+
+  .respon {
+    display: flex;
+    flex-direction: column;
+  }
+}

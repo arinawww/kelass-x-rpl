@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Shopee</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+}
+
+.top{
+    background:#ee4d2d;
+    color:#fff;
+    font-size:12px;
+    padding:6px 80px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.header{
+    background:#ee4d2d;
+    padding:18px 80px;
+}
+
+.header-box{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#fff;
+    margin-right:25px;
+}
+
+.search{
+    flex:1;
+    display:flex;
+}
+
+.search input{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+}
+
+.search button{
+    padding:12px 18px;
+    border:none;
+    background:#fb5533;
+    color:#fff;
+    cursor:pointer;
+}
+
+.cart{
+    margin-left:20px;
+    font-size:24px;
+    color:#fff;
+}
+
+.banner{
+    padding:20px 80px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:10px;
+}
+
+.banner img{
+    width:100%;
+    border-radius:4px;
+}
+
+.menu{
+    background:#fff;
+    padding:20px 80px;
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    text-align:center;
+}
+
+.menu img{
+    width:40px;
+}
+
+.menu p{
+    font-size:13px;
+    margin-top:6px;
+}
+
+.section{
+    background:#fff;
+    margin:20px 80px;
+    padding:20px;
+}
+
+.section h3{
+    margin:0 0 15px;
+    font-size:16px;
+}
+
+.category{
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    text-align:center;
+    font-size:13px;
+}
+
+.product{
+    margin:20px 80px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:15px;
+}
+
+.card{
+    background:#fff;
+    padding:10px;
+}
+
+.card img{
+    width:100%;
+}
+
+.card p{
+    font-size:13px;
+    margin:8px 0 4px;
+}
+
+.price{
+    color:#ee4d2d;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="top">
+    <div>Seller Centre | Mulai Berjualan | Download</div>
+    <div>Notifikasi | Bantuan | Login | Daftar</div>
+</div>
+
+<div class="header">
+    <div class="header-box">
+        <div class="logo">Shopee</div>
+        <div class="search">
+            <input type="text" placeholder="Daftar & Dapat Voucher Gratis">
+            <button>🔍</button>
+        </div>
+        <div class="cart">🛒</div>
+    </div>
+</div>
+
+<div class="banner">
+    <img src="https://images.unsplash.com/photo-1607082349566-1870d4a9b0c4">
+    <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae">
+</div>
+
+<div class="menu">
+    <div><img src="https://img.icons8.com/color/96/shop.png"><p>Shopee Mall</p></div>
+    <div><img src="https://img.icons8.com/color/96/flash-sale.png"><p>Flash Sale</p></div>
+    <div><img src="https://img.icons8.com/color/96/delivery.png"><p>Gratis Ongkir</p></div>
+    <div><img src="https://img.icons8.com/color/96/discount.png"><p>Diskon</p></div>
+    <div><img src="https://img.icons8.com/color/96/online-store.png"><p>Supermarket</p></div>
+    <div><img src="https://img.icons8.com/color/96/ticket.png"><p>Voucher</p></div>
+    <div><img src="https://img.icons8.com/color/96/gift.png"><p>Hadiah</p></div>
+    <div><img src="https://img.icons8.com/color/96/box.png"><p>Elektronik</p></div>
+    <div><img src="https://img.icons8.com/color/96/t-shirt.png"><p>Fashion</p></div>
+    <div><img src="https://img.icons8.com/color/96/more.png"><p>Lainnya</p></div>
+</div>
+
+<div class="section">
+    <h3>KATEGORI</h3>
+    <div class="category">
+        <div>Elektronik</div>
+        <div>Fashion Pria</div>
+        <div>Fashion Wanita</div>
+        <div>Kesehatan</div>
+        <div>Olahraga</div>
+        <div>Otomotif</div>
+        <div>Makanan</div>
+        <div>Rumah Tangga</div>
+    </div>
+</div>
+
+<div class="product">
+    <div class="product-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01">
+            <p>Sepatu Sneakers</p>
+            <div class="price">Rp199.000</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+            <p>Jam Tangan</p>
+            <div class="price">Rp149.000</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e">
+            <p>Headphone</p>
+            <div class="price">Rp299.000</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1e7">
+            <p>Hoodie</p>
+            <div class="price">Rp179.000</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+            <p>Sepatu Sport</p>
+            <div class="price">Rp259.000</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513708922410-1f52a6bb35f6">
+            <p>Tas</p>
+            <div class="price">Rp189.000</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

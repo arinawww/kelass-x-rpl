@@ -1,0 +1,36 @@
+.border {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.wadah {
+    width: 1000px;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+}
+
+.card {
+    width: 30%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.horizontal {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rata {
+    text-align: center;
+}
+
+.warna {
+    background: linear-gradient(to right, red, yellow);
+    color: white;
+    border-radius: 5px;
+}

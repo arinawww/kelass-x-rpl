@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap |Arina</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/kenzy-pfp.jpg" alt="arin-pfp" width="50" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#promo">Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <!-- ImageCarousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/iphone.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Iphone Murah</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quis.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/mouse.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mouse Murah</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quis.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/tv.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>TV Murah</h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Button -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron p-5 mb-4 bg-body-tertiary rounded-3">
+    <div class="container-fluid text-center">
+      <h1 class="display-4">Promo murah!</h1>
+
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+        content or information.
+      </p>
+
+      <hr class="my-4">
+
+      <p class="fs-4">
+        It uses a utility classes for typography and spacing to space content out within the larger container.
+      </p>
+
+      <button class="btn btn-outline-primary btn-lg" type="button">Beli Sekarang!
+      </button>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="container">
+    <div class="row" id="produk">
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div class="card border-0">
+          <img src="images/iphone.avif" class="card-img-top" alt="iphone">
+          <div class="card-body">
+            <h5 class="card-title">Iphone Murah!</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+              the card's content.</p>
+            <h5>Rp2.000.000,-</h5>
+            <a href="#" class="btn btn-primary">Beli</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div class="card border-0">
+          <img src="images/mouse.avif" class="card-img-top" alt="mouse" width="100" height="280">
+          <div class="card-body">
+            <h5 class="card-title">Mouse Murah</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+              the card's content.</p>
+            <h5>Rp100.000.000,-</h5>
+            <a href="#" class="btn btn-primary">Beli</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div class="card border-0">
+          <img src="images/tv.avif" class="card-img-top" alt="tv">
+          <div class="card-body">
+            <h5 class="card-title">TV Murah</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+              the card's content.</p>
+            <h5>Rp50.000.000,-</h5>
+            <a href="#" class="btn btn-primary">Beli</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kolom dan Tabel -->
+  <div class="container" id="promo">
+    <div class="row text-center bg-info text-white">
+      <div class="col">
+        <h1>Diskon 50%!</h1>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-lg-4">
+        <img src="images/laptop.png" width="350px">
+      </div>
+      <div class="col-lg-8">
+        <table class="table mt-3 table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Iphone</th>
+              <th scope="col">Diskon</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Iphone 12 Pro Max</td>
+              <td>60%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Iphone 14 Pro</td>
+              <td>70%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Iphone 14 Pro Max</td>
+              <td>80%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-5 bg-light rounded-top-3 bg-black text-white" id="tentang">
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <p>SMKN 2 Buduran Sidoarjo<br>
+            <strong>Sidoarjo, Jawa Timur</strong><br>
+            Indonesia<br>
+            61555
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            <strong>Pembayaran</strong><br>
+            BRI<br>111-111-111<br>
+            DANA<br>222-222-222<br>
+            SHOPEEPAY<br>0823-9592-8309<br>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <p>
+            <strong>Tentang Kami</strong><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, a! Nemo aliquam quibusdam rerum possimus dicta sint labore, amet ducimus, nobis nesciunt et omnis libero fugit! Impedit odit laudantium assumenda, pariatur sit temporibus voluptas expedita autem consequuntur quam officia, quidem fugiat sequi, nobis ea odio magni animi eaque eius vero? Cum enim qui at numquam voluptas exercitationem neque sit hic pariatur distinctio sapiente quasi et laborum natus praesentium suscipit minima earum perferendis, reprehenderit totam. Vero a consectetur qui nihil molestiae explicabo voluptatibus eos dignissimos! Ducimus quae atque, ad quaerat distinctio ipsum esse non dolore vitae fugiat cumque impedit qui molestias?
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Form Kontak</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputText1" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="TextHelp" placeholder="Masukkan Nama">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputAlamat1" class="form-label">Alamat</label>
+                    <input type="text" class="form-control" id="exampleInputAlamat1" placeholder="Masukkan Alamat">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputKota1" class="form-label">Kota</label>
+                    <input type="text" class="form-control" id="exampleInputKota1" placeholder="Masukkan Kota">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleInputKodePos1" class="form-label">KodePos</label>
+                    <input type="text" class="form-control" id="exampleInputKodePos1" placeholder="Masukkan KodePos">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
