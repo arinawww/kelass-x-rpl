@@ -1,0 +1,86 @@
+CARA KERJA LARAVEL: PENJELASAN MENDALAM
+=====================================
+
+Laravel menggunakan pola arsitektur MVC (Model-View-Controller) dan memiliki siklus hidup permintaan (Request Lifecycle) yang sangat terstruktur. Berikut adalah tahapan detail bagaimana Laravel memproses sebuah permintaan:
+
+1. ENTRY POINT (public/index.php)
+Semua permintaan masuk melalui file `public/index.php`. File ini memuat autoloader yang dihasilkan oleh Composer dan mengambil instance aplikasi Laravel dari `bootstrap/app.php`.
+
+2. HTTP / CONSOLE KERNELS
+Permintaan kemudian dikirim ke HTTP Kernel atau Console Kernel. HTTP Kernel bertugas melakukan konfigurasi dasar seperti penanganan error, konfigurasi log, dan mendeteksi lingkungan aplikasi.
+
+3. ROUTING (Awal Perjalanan)
+Router mengarahkan permintaan HTTP ke rute yang sesuai (didefinisikan di folder `routes/`, biasanya `web.php` atau `api.php`).
+
+Contoh kode di routes/web.php:
+-------------------------------
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/user/{id}', [UserController::class, 'show']);
+-------------------------------
+
+4. MIDDLEWARE (Filtrasi)
+Sebelum sampai ke Controller, permintaan biasanya melewati Middleware. Middleware bertindak sebagai "satpam". Jika user belum login namun mengakses halaman admin, Middleware `auth` akan menolaknya.
+
+5. CONTROLLERS (Otak Logika)
+Controller menerima input, memproses logika, dan berinteraksi dengan Model jika diperlukan.
+
+Contoh kode di app/Http/Controllers/UserController.php:
+-------------------------------
+namespace App\Http\Controllers;
+
+use App\Models\User;
+use Illuminate\View\View;
+
+class UserController extends Controller
+{
+    public function show(string $id): View
+    {
+        // Mengambil data dari Model
+        $user = User::findOrFail($id);
+
+        // Mengirim data ke View
+        return view('user.profile', ['user' => $user]);
+    }
+}
+-------------------------------
+
+6. MODEL & ELOQUENT ORM (Managemen Data)
+Laravel menggunakan Eloquent ORM yang memudahkan interaksi dengan database menggunakan sintaks PHP yang elegan, tanpa perlu menulis query SQL manual.
+
+Contoh kode di app/Models/User.php:
+-------------------------------
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    // Eloquent otomatis mengasumsikan tabel 'users'
+    protected $fillable = ['name', 'email', 'password'];
+}
+-------------------------------
+
+7. VIEW & BLADE ENGINE (Presentasi)
+View bertanggung jawab untuk menampilkan data ke user. Laravel menggunakan template engine bernama Blade yang memungkinkan penggunaan kode PHP di dalam HTML dengan sintaks yang bersih.
+
+Contoh kode di resources/views/user/profile.blade.php:
+-------------------------------
+<h1>Profil Pengguna</h1>
+<p>Nama: {{ $user->name }}</p>
+<p>Email: {{ $user->email }}</p>
+
+@if($user->is_admin)
+    <span class="badge">Administrator</span>
+@endif
+-------------------------------
+
+RINGKASAN ALUR:
+Request -> public/index.php -> Kernel -> Middleware -> Router -> Controller -> Model -> View -> Response (HTML/JSON)
+
+KEUNGGULAN UTAMA:
+- Eloquent ORM: Manipulasi database sangat mudah.
+- Blade Templating: Tampilan bersih dan modular.
+- Artisan CLI: Tool baris perintah untuk mempercepat development (contoh: `php artisan make:controller`).
+- Security: Proteksi bawaan terhadap CSRF, SQL Injection, dan XSS.
