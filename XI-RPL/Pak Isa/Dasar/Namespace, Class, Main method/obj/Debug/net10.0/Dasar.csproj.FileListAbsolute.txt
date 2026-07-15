@@ -1,0 +1,14 @@
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\bin\Debug\net10.0\Dasar.exe
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\bin\Debug\net10.0\Dasar.deps.json
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\bin\Debug\net10.0\Dasar.runtimeconfig.json
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\bin\Debug\net10.0\Dasar.dll
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\bin\Debug\net10.0\Dasar.pdb
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\Dasar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\Dasar.AssemblyInfoInputs.cache
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\Dasar.AssemblyInfo.cs
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\Dasar.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\Dasar.dll
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\refint\Dasar.dll
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\Dasar.pdb
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\Dasar.genruntimeconfig.cache
+C:\Users\LENOVO\OneDrive\Documents\XI-RPL\Dasar\Dasar\obj\Debug\net10.0\ref\Dasar.dll
